@@ -24,12 +24,14 @@ function Box(props: ThreeElements['mesh']) {
 
 const App = () => {
     return (
-      <Canvas className='w-full h-500px' style={{ width: '100vw', height: '100vh' } } >
-            <ambientLight />
-            <pointLight position={[0, 0, 0]} />
-            <Box position={[2.5,2,0]} />
-            <Box position={[-1.2,2,0]} />
+      <>
+        <Canvas className='w-full h-500px' style={{ width: '100vw', height: '100vh' }} >
+          <ambientLight />
+          <pointLight position={[0, 0, 0]} />
+          <Box position={[2.5, 2, 0]} />
+          <Box position={[-1.2, 2, 0]} />
         </Canvas>
+      </>
     )
 }
 
